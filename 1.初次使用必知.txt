@@ -1,0 +1,19 @@
+请将软件文件夹内Python38文件夹路径添加到系统Path路径(!!!注意!Path变量中有Python环境的用户可以跳过，也可以替换，根据自己情况而定)
+例：
+F:\code\dosPy\Python38
+F:\code\dosPy\Python38\Scripts
+
+启动方法：
+双击运行BootLoader.bat
+
+
+升级方法：
+1.从lanzoui.com/pdupdate下载更新用的txt文件
+2.将文件保存至软件根目录PyDOS下
+3.启动PyDOS,输入update--system
+4.在新窗口进行更新
+
+音乐下载组件使用注意：
+list.txt要在!!!!每次搜索!!!!!!完成后务必清理，避免无法选择正确歌曲！！
+
+by 一架飞稽
