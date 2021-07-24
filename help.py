@@ -30,7 +30,7 @@ elif help == 5 :
     print("请自行前往Android Devloper官网查看使用方法，用PyShell使用还需一段时间开发。")
 elif help ==6 :
     print("PyShell")
-    print("PyDOS主体部分，功能还需完善(当然大多数功能都是软件包提供，它仅仅是一个管理器)，甚至可以直接运行cmd命令(只不过好像没有办法用cd命令,那得让提示符可修改....待解决)")
+    print("PyDOS主体部分，功能还需完善(当然大多数功能都是软件包提供，它仅仅是一个管理器)，甚至可以直接运行cmd命令(只不过好像没有办法用cd命令,那得让提示符可修改)")
     print("PyShell 0.0.1 Dev")
 
 elif help == 7 :
