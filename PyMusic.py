@@ -36,7 +36,7 @@ paths = StringVar()
 patht = StringVar()
 v = StringVar()
 v1 = StringVar()
-
+file_dir = ".\Download"
 
 def callback():
     path_ = askopenfilename()
@@ -47,23 +47,21 @@ musicPath = os.path.abspath(os.path.dirname(__file__))
 
 
 def selectPath():
-    folder_path = ".\Download"
-    folder_list = ".\Download"
-    list = ["16.mp3", "79.mp3"]
-    count = 0
-    for i in folder_list:
-        if os.path.splitext(i)[1] == '.flac':
-            list.append(i)
-            count = count + 1
-    # print(count)
 
-    s = random.randint(0, 1)
-    file = list[s]
-    fil = folder_path + "\\" + file
+    def file_name(file_dir):
+        global files
+        for root, dirs, files in os.walk(file_dir):
+            # 当前路径下所有非目录子文件
+            print(files)
+        return files
+    fil = file_name(file_dir)
+    count = len(file_name(file_dir))
 
-    pygame.mixer.music.load(fil)
+    s = random.randint(0, count - 1)
+    fil2 = file_dir + "\\" + fil[s]
+    pygame.mixer.music.load(fil2)
     pygame.mixer.music.play(1, 0)
-    media_info = MediaInfo.parse(fil)
+    media_info = MediaInfo.parse(fil2)
     data = media_info.to_json()
     rst = re.search('other_duration.*?(.*?)min(.*?)s.*?', data)
     t = int(rst.group(0)[19:20])
@@ -71,7 +69,7 @@ def selectPath():
     m = (t * 60 + r) * 1000
 
     musictime = str(t) + ':' + str(r)
-    l2.config(text=file)
+    l2.config(text=fil2)
     l3.config(text=musictime)
     lbTime = tkinter.Label(top, anchor='w')
     lbTime.place(x=25, y=150)
