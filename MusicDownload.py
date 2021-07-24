@@ -4,7 +4,6 @@ import json
 import random
 import string
 from urllib import parse
-import time
 
 import requests
 from Crypto.Cipher import AES
