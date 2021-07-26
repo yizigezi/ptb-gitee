@@ -130,7 +130,7 @@ cho = int(input("请输入歌曲序号"))
 url = data[cho]
 headers = {'User-Agent':'OW64; rv:59.0) Chrome/91.0.4472.124'}
 myfile = requests.get(url, headers=headers)
-mid = random.randint(1,100)
+mid = random.randint(1,1000)
 open("./Download/"+str(mid)+".mp3" , 'wb').write(myfile.content)
 
 with open("list.txt", 'r+') as file:
