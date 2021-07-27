@@ -1,20 +1,53 @@
+import os
+import sys
+
 import requests
-print("PPkg包管理工具 0.1")
 
-print("正在下载pkglist.txt")
-url = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/pkglist.txt"
-headers = {'User-Agent':'OW64; rv:59.0) Chrome/91.0.4472.124'}
-myFile = requests.get(url, headers=headers)
-open("pkglist.txt" , 'wb').write(myFile.content)
-print("下载完成")
+print("PPkg Package Manager 0.1")
 
-with open("pkglist.txt", "r") as f:
-    data = f.read().splitlines()
+headers = {'User-Agent': 'OW64; rv:59.0) Chrome/91.0.4472.124'}
 
-cho = input("请输入要安装的包名：")
-num = data.index(cho)
-choName = data[num]
-url1 = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/"+choName+".py"
+def uplist():
+    print("Downloading pkglist.txt")
+    url = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/pkglist.txt"
+    myFile = requests.get(url, headers=headers)
+    open("pkglist.txt", 'wb').write(myFile.content)
+    print("Download done")
 
-myFile = requests.get(url1, headers=headers)
-open(choName+".py" , 'wb').write(myFile.content)
+def file_name(file_dir):
+    global files
+    for root, dirs, files in os.walk(file_dir):
+        # 当前路径下所有非目录子文件
+        print(files)
+    return files
+
+
+def install():
+    with open("pkglist.txt", "r") as f:
+        data = f.read().splitlines()
+    choi = input("install>")
+    num = data.index(choi)
+    choName = data[num]
+    url1 = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/" + choName + ".py"
+    myFile = requests.get(url1, headers=headers)
+    open(choName + ".py", 'wb').write(myFile.content)
+
+def remove():
+    cmr = input("remove>")
+
+    confirm = input("确认删除？ [Y]是  [N]取消")
+    if confirm == "Y":
+        path = ".\\"+cmr
+        os.remove(path)
+    elif confirm == "N":
+        sys.exit(0)
+
+print("install:安装包   remove:删除包    updata:更新pkglist.txt")
+cm = input("请选择操作:")
+
+if cm == "install":
+    install()
+elif cm == "remove":
+    remove()
+elif cm == "updata":
+    uplist()

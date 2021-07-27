@@ -22,4 +22,4 @@ print("OS:{ret[plat_form]}".format(ret=ret))
 print("OS Version: {ret}".format(ret=ret['version'].split(" ")[0]))
 print("{ret[version_bit]}Bit OS".format(ret=ret))
 
-print("本项目基于GPL 3.0开源协议")
+print("本项目基于GPL 2.0开源协议")

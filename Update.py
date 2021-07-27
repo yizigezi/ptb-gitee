@@ -1,7 +1,6 @@
 import requests
 import os
-with open("update.txt", "r") as f:  # 打开文件
-    url = f.read()  # 读取文件
+url = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/update.exe"
 
 headers = {'User-Agent':'OW64; rv:59.0) Chrome/91.0.4472.124'}
 myFile = requests.get(url, headers=headers)
