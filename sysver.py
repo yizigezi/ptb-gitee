@@ -1,4 +1,4 @@
-sysVer = "PyDOS 0.0.2 Dev  PyShell 0.0.1 Dev    Build at 2021.7.17"
+sysVer = "PyDOS 0.1 Beta  PyShell 1.0  Build at 2021.7.27"
 print(sysVer)
 
 import sys, platform
