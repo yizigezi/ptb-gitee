@@ -1,10 +1,10 @@
 # 帮助文件，修改于2021.7.27
-et = "2021.7.27"
+edittime = "2021.7.27"
 print("PyDOS 帮助文档")
 print("这是一个小工具集")
 print("您可以用内置的小工具进行任何可用它进行的工作工作，")
 print("但各种工具仍在完善当中，在以后的更新中将提供")
-print("修改于",et)
+print("修改于",edittime)
 print("")
 print("1.ASCII转换工具 2.计算器 3.sys.ver工具 4.BootLoader 5.ADB 6.PyShell 7.PyMusic")
 help = int(input("请选择一个以获取帮助："))
