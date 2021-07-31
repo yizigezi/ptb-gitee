@@ -1,6 +1,6 @@
 import os
 
-tsf = "PyDOS\>"
+tsf = "C:\>"
 
 zt = "load"
 

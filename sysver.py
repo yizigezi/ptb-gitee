@@ -1,10 +1,10 @@
+import sys, platform, time
+
 sysVer = "PyDOS 0.1 Beta  PyShell 1.0  Build at 2021.7.27"
 print(sysVer)
 
-import sys, platform
-
 a = sys.version_info
-print("Python Version: {a[0]}.{a[1]}.{a[2]}".format(a=a))
+print("Python Runtime Ver: {a[0]}.{a[1]}.{a[2]}".format(a=a))
 
 ret = {}
 
@@ -18,8 +18,11 @@ else:
 
 ret["version"] = platform.version()
 ret['version_bit'] = platform.architecture()[0][0:2]
-print("OS:{ret[plat_form]}".format(ret=ret))
-print("OS Version: {ret}".format(ret=ret['version'].split(" ")[0]))
-print("{ret[version_bit]}Bit OS".format(ret=ret))
+print("*Platform OS:{ret[plat_form]}".format(ret=ret))
+print("*Platform OS Version: {ret}".format(ret=ret['version'].split(" ")[0]))
+print("*{ret[version_bit]}Bit OS".format(ret=ret))
 
 print("本项目基于GPL 2.0开源协议")
+
+date = time.strftime('%Y-%m-%d', time.localtime(time.time()))
+print("*System information as of ", date)
