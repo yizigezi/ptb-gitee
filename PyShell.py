@@ -12,7 +12,6 @@ command = input(tsf)
 while zt == "Running":
     cCode = "python.exe " + command + ".py"
     if command == "exit":
-        print("请再输入以确认。")
         break
     else:
         os.system(cCode)
