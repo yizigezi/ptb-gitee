@@ -1,8 +1,5 @@
 # PyDOS
 
-#### 介绍
-PyDOS小工具集
-
 #### 安装教程
 
 1.  访问lanzoux.com/pydos
