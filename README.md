@@ -8,12 +8,19 @@
 
 #### 依赖包安装
 (通用)对于Linux、macOS以及Windows:
+
     在bash或cmd中cd至软件目录，输入以下命令：
+
         pip install -r requirements.txt
+
     注：如提示"pip: failed to create process"，请在命令前加上"python3 -m"
+
     提示：因macOS自带的Python 2不会带pip,因此需安装Python3
+
 (Windows)在Windows下使用批处理文件一键安装:
+
     运行目录下的"InstallPkg.bat"，稍等片刻即可安装完成
+
 #### 使用说明
 
 ！！！必读！！！
