@@ -1,0 +1,9 @@
+使用前请安装Python 环境，务必加入环境变量Path
+
+启动方法：
+双击运行BootLoader.bat
+
+一定要运行InstallPkg.bat!!!
+运行后记得改Python目录下Lib\site-packages文件夹的crypto文件夹名字，将"c"改为"C"
+
+by 一架飞稽
