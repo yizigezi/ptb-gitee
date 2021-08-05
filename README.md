@@ -44,3 +44,6 @@ PPkg:软件包管理器
 PyRename:打开PyRename工具
 
 Music:打开PyMusic音乐播放器
+
+
+正在尝试将py-dos上传至PyPi.org
