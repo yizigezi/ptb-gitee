@@ -4,16 +4,12 @@ tsf = "C:\>"
 
 zt = "load"
 
-if zt == "load":
-    os.system("python BootLoader.py")
-    zt = "Running"
-
 command = input(tsf)
-while zt == "Running":
-    cCode = "python " + command + ".py"
+while True:
+    cCode = "python3 " + command + ".py"
     if command == "exit":
         break
     else:
         os.system(cCode)
-        cCode = "python " + command + ".py"
+        cCode = "python3 " + command + ".py"
         command = input(tsf)
