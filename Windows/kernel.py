@@ -1,5 +1,7 @@
 import os
 
+print("PyKernel 2.0")
+print("On py-dos")
 prompt = "C:\>"
 
 while True:
