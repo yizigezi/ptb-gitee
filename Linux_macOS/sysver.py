@@ -2,7 +2,7 @@ import sys, platform, time
 
 from requests.api import patch
 
-sysVer = "PyDOS 0.2 Mn  PyShell 2.0  Build at 2021.8.5"
+sysVer = "PyDOS 0.2 Mn  PyShell 2.0 Cheetah  Build at 2021.8.5"
 print(sysVer)
 
 print("*support: https://gitee.com/yizhigezi_yijiafeiji/py-dos/blob/master/README.md")
