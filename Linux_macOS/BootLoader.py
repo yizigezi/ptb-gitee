@@ -12,8 +12,6 @@ def bootloader():
     print()
     print()
     print()
-
-
-    os.system("python3 PyShell.py")
+    os.system("python3 kernel.py")
 
 bootloader()
