@@ -1,12 +1,12 @@
 import os
 
-print("PyShell 0.1")
+print("PyKernel 0.1")
 print("On PyDOS")
 
-tsf = "C:\>"
+prompt = "C:\>"
 
 while True:
-    command = input(tsf)
+    command = input(prompt)
     cCode = "python3 " + command + ".py"
     if command == "exit":
         print("Bye")
