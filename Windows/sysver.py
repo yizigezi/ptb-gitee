@@ -1,6 +1,6 @@
 import sys, platform, time
 
-sysVer = "PyDOS 0.2 Mn  PyShell 2.0  Build at 2021.8.5"
+sysVer = "PyDOS 0.2 Mn  PyKernel 2.0  Build at 2021.8.5"
 print(sysVer)
 
 a = sys.version_info
