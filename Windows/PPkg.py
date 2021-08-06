@@ -4,7 +4,9 @@ import requests
 
 print("PPkg Package Manager 0.1")
 
-headers = {'User-Agent': 'OW64; rv:59.0) Chrome/91.0.4472.124'}
+headers = {'User-Agent': 
+            'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36'
+            }
 
 def uplist():
     print("Downloading pkglist.txt")
@@ -43,7 +45,6 @@ def remove():
 
 def updatesys():
     url = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/Windows/update.exe"
-    headers = {'User-Agent':'OW64; rv:59.0) Chrome/91.0.4472.124'}
     myFile = requests.get(url, headers=headers)
     open("./update.exe" , 'wb').write(myFile.content)
     os.system("update.exe")
