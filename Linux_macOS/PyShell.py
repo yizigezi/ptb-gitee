@@ -1,5 +1,8 @@
 import os
 
+print("PyShell 0.1")
+print("On PyDOS")
+
 tsf = "C:\>"
 
 while True:
