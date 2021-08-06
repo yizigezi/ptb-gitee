@@ -46,15 +46,15 @@ PyKernel使用方法
 
     exit:退出
 
-    help:帮助文档
+    Help:帮助文档
 
-    Note:打开笔记本(GUI)
+    Notepad:打开笔记本(GUI)
 
     PPkg:软件包管理器
 
     PyRename:打开PyRename工具
 
-    Music:打开PyMusic音乐播放器
+    PyMusic:打开PyMusic音乐播放器(GUI)
 
 
 正在尝试将py-dos上传至PyPi.org
