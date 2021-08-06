@@ -1,7 +1,7 @@
 import os
 
 print("PyKernel 2.0 Cheetah")
-print("On PyDOS")
+print("On py-dos")
 
 prompt = "C:\>"
 
