@@ -12,8 +12,6 @@ def bootloader():
     print()
     print()
     print()
-    print("PyShell 0.1")
-    print("On PyDOS")
 
 
     os.system("python3 PyShell.py")
