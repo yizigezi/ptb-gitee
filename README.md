@@ -57,4 +57,5 @@ PyKernel使用方法
     PyMusic:打开PyMusic音乐播放器(GUI)
 
 
-正在尝试将py-dos上传至PyPi.org
+沉舟侧畔千帆过，病树前头万木春。
+GUI is comming.
