@@ -21,7 +21,7 @@ elif help == 2:
 elif help == 3:
     print("sys.ver工具")
     print("此工具可检测您的系统版本、软件版本号、Python版本，由sys、platform库实现")
-    print("sys.ver，0.1 Beta")
+    print("sys.ver，0.1-Beta")
 elif help == 4:
     print("Bootloader")
     print("现在看上去除了显示版本号似乎没有其他什么用....不过后期会有更多功能。")
@@ -34,10 +34,9 @@ elif help == 5:
 
 elif help == 6:
     print("PyMusic")
-    print("PyMusic分PyMusicPlayer与PyMusicDownload组件")
-    print("PyMusicPlayer:您可以在这里播放音乐，现支持*.mp3，可通过在PyShell输入Music打开")
-    print("PyMusicDownload组件:您可以输入歌名下载音乐，音乐来自网易云音乐。可在PyMusicPlayer中点击  下载歌曲  打开")
-    print("PyMusic 0.1")
+    print("PyMusicPlayer:您可以在这里播放音乐，现支持.mp3，可通过在PyShell输入Music打开。")
+    print("您还可以输入歌名下载音乐，音乐来自网易云音乐。可在PyMusicPlayer中点击  下载歌曲  打开")
+    print("PyMusic 0.1 Fantasia")
 
 elif help == 7:
     print("PPkg 包管理工具0.1")
