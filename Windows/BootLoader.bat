@@ -1,1 +1,2 @@
-python.exe PyShell.py
+python.exe BootLoader.py
+pause

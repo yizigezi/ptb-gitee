@@ -1,13 +1,19 @@
 import os
 import sys
 import requests
+import json
 
 print("PPkg Package Manager 0.1")
 
-headers = {'User-Agent': 
-            'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36'
-            }
+# 系统识别\head获取
+with open("settings.json", "w") as s:
+    sets = json.load(s)
+    head = sets["User Agent"]
+    system = sets["system"]
 
+headers = {
+    'User-Agent': head
+            }
 def uplist():
     print("Downloading pkglist.txt")
     url = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/pkglist.txt"
@@ -29,22 +35,22 @@ def install():
     choi = input("install>")
     num = data.index(choi)
     choName = data[num]
-    url1 = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/Windows/" + choName + ".py"
+    url1 = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/"+ system + "/" + choName + ".py"
     myFile = requests.get(url1, headers=headers)
     open(choName + ".py", 'wb').write(myFile.content)
 
 def remove():
     cmr = input("remove>")
     upkg = cmr + ".py"
-    confirm = input("确认删除？ [Y]是  [N]取消")
+    confirm = input("确认删除？(Y/n)")
     if confirm == "Y":
         ccm = "del " + upkg
         os.system(ccm)
-    elif confirm == "N":
-        sys.exit(0)
+    elif confirm == "n":
+        pass
 
 def updatesys():
-    url = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/Windows/update.exe"
+    url = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/update.exe"
     myFile = requests.get(url, headers=headers)
     open("./update.exe" , 'wb').write(myFile.content)
     os.system("update.exe")

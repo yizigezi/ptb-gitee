@@ -5,7 +5,7 @@ print("On py-dos")
 prompt = "C:\>"
 
 while True:
-command = input(prompt)
+    command = input(prompt)
     cCode = "python.exe " + command + ".py"
     if command == "exit":
         break
