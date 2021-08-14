@@ -1,7 +1,7 @@
 import sys, platform, time, socket, psutil
 
 # 版本信息
-sysVer = "PyDOS 0.2 Mn  PyKernel 2.0 Cheetah  Build at 2021.8.5"
+sysVer = "PyDOS 0.3 Fe  PyKernel 2.0 Cheetah  Build at 2021.8.14"
 print(sysVer)
 a = sys.version_info
 print("Python Runtime Ver: {a[0]}.{a[1]}.{a[2]}".format(a=a))

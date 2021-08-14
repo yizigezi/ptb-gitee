@@ -28,7 +28,7 @@ elif help == 4:
     print("BootLoader，0.1 Pioneer")
 elif help == 5:
     print("PyKernel")
-    print("PyDOS主体部分，功能还需完善(当然大多数功能都是软件包提供，它仅仅是一个管理器)，甚至可以直接运行cmd命令(只不过好像没有办法用cd命令,那得让提示符可修改....待解决)")
+    print("PyDOS主体部分，功能还需完善(当然大多数功能都是软件包提供，它仅仅是一个管理器)")
     print("PyKernel 2.0 Cheetah")
 
 elif help == 6:

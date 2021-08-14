@@ -1,5 +1,4 @@
 import os
-import sys
 import requests
 import json
 
@@ -55,7 +54,14 @@ def updatesys():
     open("./update.exe" , 'wb').write(myFile.content)
     os.system("update.exe")
 
-print("install:安装包   remove:删除包    updata:更新pkglist.txt    updatesys:更新软件")
+
+def reset():
+    url = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/" + system + "/settings.json"
+    res = requests.get(url, headers=headers)
+    open("settings.json","wb").write(res.content)
+    print("done")
+
+print("install:安装包   remove:删除包    updata:更新pkglist.txt    updatesys:更新软件   reset:恢复原始设置（从腾讯云下载settings.json）")
 cm = input("请选择操作:")
 
 if cm == "install":
@@ -66,3 +72,9 @@ elif cm == "updata":
     uplist()
 elif cm == "updatesys":
     updatesys()
+elif cm == "reset":
+    r = input("确认恢复原始设置？(Y/n)")
+    if r == "Y":
+        reset()
+    else:
+        pass
