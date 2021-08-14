@@ -12,13 +12,16 @@ with open("settings.json", "w") as s:
 
 headers = {
     'User-Agent': head
-            }
+}
+
+
 def uplist():
     print("Downloading pkglist.txt")
     url = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/pkglist.txt"
     myFile = requests.get(url, headers=headers)
     open("pkglist.txt", 'wb').write(myFile.content)
     print("Download done")
+
 
 def file_name(file_dir):
     global files
@@ -34,9 +37,10 @@ def install():
     choi = input("install>")
     num = data.index(choi)
     choName = data[num]
-    url1 = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/"+ system + "/" + choName + ".py"
+    url1 = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/" + system + "/" + choName + ".py"
     myFile = requests.get(url1, headers=headers)
     open(choName + ".py", 'wb').write(myFile.content)
+
 
 def remove():
     cmr = input("remove>")
@@ -48,18 +52,20 @@ def remove():
     elif confirm == "n":
         pass
 
+
 def updatesys():
     url = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/update.exe"
     myFile = requests.get(url, headers=headers)
-    open("./update.exe" , 'wb').write(myFile.content)
+    open("./update.exe", 'wb').write(myFile.content)
     os.system("update.exe")
 
 
 def reset():
     url = "https://pydos-1301360149.cos.ap-nanjing.myqcloud.com/" + system + "/settings.json"
     res = requests.get(url, headers=headers)
-    open("settings.json","wb").write(res.content)
+    open("settings.json", "wb").write(res.content)
     print("done")
+
 
 print("install:安装包   remove:删除包    updata:更新pkglist.txt    updatesys:更新软件   reset:恢复原始设置（从腾讯云下载settings.json）")
 cm = input("请选择操作:")
