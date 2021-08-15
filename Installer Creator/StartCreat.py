@@ -22,4 +22,5 @@ with open("build.bat", "wb") as b:
     b.write(build.content)
 r = "https://pypi.tuna.tsinghua.edu.cn/simple"
 os.system("pip install pyside6 -i " + r)
+os.system("pip install pyinstaller -i " + r)
 print("部署完成，请修改config.py以自定义您的安装程序")
