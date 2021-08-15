@@ -23,7 +23,7 @@ import random
 from tkinter.filedialog import askopenfilename
 from tkinter import StringVar
 
-with open("settings.json", "w") as s:
+with open("settings.json", "r") as s:
     sets = json.load(s)
     head = sets["User Agent"]
 

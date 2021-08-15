@@ -5,7 +5,7 @@ import json
 print("PPkg Package Manager 0.1")
 
 # 系统识别\head获取
-with open("settings.json", "w") as s:
+with open("settings.json", "r") as s:
     sets = json.load(s)
     head = sets["User Agent"]
     system = sets["system"]
