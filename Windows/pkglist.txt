@@ -7,5 +7,5 @@ ASCII
 PPkg
 PyMusic
 PyRename
-PyShell
+kernel
 sysver
