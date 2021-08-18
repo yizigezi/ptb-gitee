@@ -1,10 +1,10 @@
-# PyToolSet(PTS)
+# PyToolBox+(PTB+,原PyDOS)
 
 GUI 开发进度:
 
-    1.PtKernel界面设计  完成
-    2.PtKernel功能实现  进行中
-    3.PTS套件完全GUI设计  未开始
+    1.PtKernel+界面设计  完成
+    2.PtKernel+功能实现  进行中
+    3.PTB+套件完全GUI设计  未开始
 
 优点：
 
