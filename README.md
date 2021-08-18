@@ -1,4 +1,11 @@
-# PyDOS
+# PyToolSet(PTS)
+
+GUI 开发进度:
+
+    1.PtKernel界面设计  完成
+    2.PtKernel功能实现  进行中
+    3.PTS套件完全GUI设计  未开始
+
 优点：
 
     1.体积小（只有几十KB）
