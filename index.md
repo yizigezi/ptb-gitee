@@ -1,37 +1,67 @@
-## Welcome to GitHub Pages
+# PyToolBox+(PTB+,原PyDOS)
 
-You can use the [editor on GitHub](https://github.com/yizigezi/ptb-gitee/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+GUI 开发进度:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    1.PtKernel+界面设计  完成
+    2.PtKernel+功能实现  进行中
+    3.PTB+套件完全GUI设计  未开始
 
-### Markdown
+优点：
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    1.体积小（只有几十KB）
 
-```markdown
-Syntax highlighted code block
+    2.使用方便（不管对于任何平台）
 
-# Header 1
-## Header 2
-### Header 3
+    3.扩展性强（PPkg即可下载任何可用的工具包）
 
-- Bulleted
-- List
+    4.跨平台：Linux、Windows、macOS......只要支持Python3、Tkinter，都能运行
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+#### 安装教程
 
-[Link](url) and ![Image](src)
-```
+下载制定版本压缩包并解压缩
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### 依赖包安装
+(通用)对于Linux、macOS以及Windows:
 
-### Jekyll Themes
+    在bash或cmd中cd至软件目录，输入以下命令：
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yizigezi/ptb-gitee/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+        pip install -r requirements.txt
 
-### Support or Contact
+    注：如提示"pip: failed to create process"，请在命令前加上"python3 -m"
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+    提示：因macOS自带的Python 2不会带pip,因此需安装Python3
+
+(Windows)在Windows下使用批处理文件一键安装:
+
+    运行目录下的"InstallPkg.bat"，稍等片刻即可安装完成
+
+#### 使用说明
+
+！！！必读！！！
+
+PyKernel使用方法
+
+命令说明
+
+    sysver:打开sysver工具
+
+    Calcutator:打开计算器(GUI)
+
+    ASCII:打开ascii码转换器
+
+    exit:退出
+
+    Help:帮助文档
+
+    Notepad:打开笔记本(GUI)
+
+    PPkg:软件包管理器
+
+    PyRename:打开PyRename工具
+
+    PyMusic:打开PyMusic音乐播放器(GUI)
+
+
+沉舟侧畔千帆过，病树前头万木春。
+GUI is comming.
